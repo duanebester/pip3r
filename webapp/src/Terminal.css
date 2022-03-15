@@ -5,12 +5,22 @@
 .terminal {
   width: 100%;
   height: 100%;
+  font: 16px Inconsolata, monospace;
+  overflow-y: auto;
+}
+
+.chakra-ui-dark .terminal {
   background-color: white;
-  background-image: radial-gradient(rgba(44, 109, 44, 0.75), black 120%);
+  background-image: radial-gradient(rgba(34, 54, 65, 0.75), black 120%);
   color: white;
-  font: 1.3rem Inconsolata, monospace;
-  text-shadow: 0 0 5px #c8c8c8;
-  overflow: hidden;
+  text-shadow: 0 0 3px #c8c8c8;
+}
+
+.chakra-ui-light .terminal {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(229, 236, 240, 0.75) 120%);
+  color:black;
+  text-shadow: 0 0 3px #3a3a3a;
 }
 
 .terminal-lines {
